@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 
 const Navbar = () => {
@@ -27,9 +28,9 @@ const Navbar = () => {
       } z-10`}
     >
       <div className="font-bold text-xl lg:text-3xl">
-  <span className="text-blue-500">SVCE</span>
-  <span className="text-white"> Bengaluru</span>
-</div>
+        <span className="text-blue-500">SVCE</span>
+        <span className="text-white"> Bengaluru</span>
+      </div>
 
       <button className="text-gray-600 focus:outline-none md:hidden" onClick={toggleNav}>
         <svg className="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -51,7 +52,7 @@ const Navbar = () => {
         <li>
           <a
             href="#"
-            className="text-gray-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-full transition-colors duration-300"
+            className="text-gray-100 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-full transition-colors duration-300 text-lg"
           >
             Who We Are
           </a>
@@ -59,7 +60,7 @@ const Navbar = () => {
         <li>
           <a
             href="#"
-            className="text-gray-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-full transition-colors duration-300"
+            className="text-gray-100 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-full transition-colors duration-300 text-lg"
           >
             Campus &amp; City
           </a>
@@ -67,7 +68,7 @@ const Navbar = () => {
         <li>
           <a
             href="#"
-            className="text-gray-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-full transition-colors duration-300"
+            className="text-gray-100 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-full transition-colors duration-300 text-lg"
           >
             Academic Life
           </a>
@@ -75,7 +76,7 @@ const Navbar = () => {
         <li>
           <a
             href="#"
-            className="text-gray-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-full transition-colors duration-300"
+            className="text-gray-100 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-full transition-colors duration-300 text-lg"
           >
             Research
           </a>
@@ -83,7 +84,7 @@ const Navbar = () => {
         <li>
           <a
             href="#"
-            className="text-gray-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-full transition-colors duration-300"
+            className="text-gray-100 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-full transition-colors duration-300 text-lg"
           >
             Admissions &amp; Aid
           </a>
@@ -94,3 +95,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
