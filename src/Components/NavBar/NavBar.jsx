@@ -22,11 +22,15 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 py-4 px-6 flex justify-between items-center transition-all duration-300 ${
         isSticky
-          ? 'bg-gray-200 bg-opacity-55 backdrop-filter backdrop-blur-sm shadow-md'
+          ? 'bg-gray-900 bg-opacity-55 backdrop-filter backdrop-blur-sm shadow-md'
           : 'bg-transparent'
       } z-10`}
     >
-      <div className="text-blue-600 font-bold text-xl">SVCE Bengaluru</div>
+      <div className="font-bold text-xl lg:text-3xl">
+  <span className="text-blue-500">SVCE</span>
+  <span className="text-white"> Bengaluru</span>
+</div>
+
       <button className="text-gray-600 focus:outline-none md:hidden" onClick={toggleNav}>
         <svg className="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           {isNavOpen ? (
