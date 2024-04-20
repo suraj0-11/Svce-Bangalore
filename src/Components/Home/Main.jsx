@@ -22,6 +22,7 @@ const Main = () => {
             DREAM IT, <br /> WE ENGINEER IT.
           </p>
         </div>
+      </div>
         <div className="background background--summer">
           <h2 className="title">Summer</h2>
         </div>
