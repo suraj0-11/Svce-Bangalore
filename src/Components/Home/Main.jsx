@@ -23,8 +23,9 @@ const Main = () => {
         </div>
         <section className="season-desc">
           <div className="desc-wrapper">
-            <h3 className="season--title">Spring</h3>
-            <p className="season--about">Spring is one of the four conventional temperate seasons, following winter and preceding summer. There are various technical definitions of spring, but local usage of the term varies according to local climate, cultures and customs. When it is spring in the Northern Hemisphere, it is autumn in the Southern Hemisphere and vice versa. At the spring (or vernal) equinox, days and nights are approximately twelve hours long, with day length increasing and night length decreasing as the season progresses.</p>
+            <h3 className="season--title">Sri Venkateshwara College</h3>
+            <h3 className="season--title">of Engineering</h3>
+            <p className="season--about">For over decade SVCE has provided peerless academic, administrative and pastoral support to students hoping to succeed and beyond. From academic aspirations to the simple day-to-day challenges of living, we understand the importance of every part of the student journey.</p>
           </div>
         </section>
         <div className="background background--summer">
