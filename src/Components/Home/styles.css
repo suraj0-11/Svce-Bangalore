@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 * {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 body {
   margin: 0;
@@ -15,7 +15,14 @@ h3 {
   transform-style: preserve-3d;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll;
+}
+
+/* Hide scrollbar */
+.parallax-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.parallax-wrapper {
+  scrollbar-width: none;
 }
 .background {
   background-position: center;
@@ -31,20 +38,9 @@ h3 {
   align-items: center;
   transform: translateZ(-1px) scale(2);
 }
-.background--spring {
-  background-image: url('svce-logo.png');
-  background-size: contain; /* Adjusted background size */
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.background--summer {
-  background-image: url('https://images.pexels.com/photos/375152/summer-sun-blooming-season-375152.jpeg?cs=srgb&dl=beautiful-bloom-blossom-375152.jpg&fm=jpg');
-}
-.background--fall {
-  background-image: url('https://images.pexels.com/photos/33060/road-forest-season-autumn.jpg?cs=srgb&dl=autumn-fall-forest-33060.jpg&fm=jpg');
-}
+
 .background--winter {
-  background-image: url('https://images.pexels.com/photos/235595/pexels-photo-235595.jpeg?cs=srgb&dl=branches-cold-season-235595.jpg&fm=jpg');
+  background-image: url("../Home/SVCE.png");
 }
 .title {
   position: absolute;
@@ -59,13 +55,17 @@ h3 {
   height: 100px;
   color: white;
   font-size: 5rem;
-  /* background: rgba(0,0,0,0.4); */
+
+  /* background: rgba(0, 0, 0, 0.4); */
+
 }
 
 .season-desc {
   z-index: 1;
   position: relative;
-  background: #222a31;
+
+  background: #282e34;
+
   color: white;
   font-size: 1.1rem;
   letter-spacing: 2px;
@@ -100,9 +100,11 @@ h3 {
       font-size: 2.5rem;
       margin: 20px 0;
       letter-spacing: unset;
-     }
+    }
     .season-about {
       margin-top: 20px;
-     }
-   }
- }
+
+    }
+  }
+}
+
