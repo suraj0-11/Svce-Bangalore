@@ -1,5 +1,5 @@
-
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import logo from "./svce-logo.png";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -11,8 +11,8 @@ const Navbar = () => {
       setIsSticky(scrollPosition > 0);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleNav = () => {
@@ -23,17 +23,28 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 py-4 px-6 flex justify-between items-center transition-all duration-300 ${
         isSticky
-          ? 'bg-gray-900 bg-opacity-55 backdrop-filter backdrop-blur-sm shadow-md'
-          : 'bg-transparent'
+          ? "bg-gray-900 bg-opacity-55 backdrop-filter backdrop-blur-sm shadow-md"
+          : "bg-transparent"
       } z-10`}
     >
-      <div className="font-bold text-xl lg:text-3xl">
-        <span className="text-blue-500">SVCE</span>
-        <span className="text-white"> Bengaluru</span>
+      <div className="font-bold text-xl lg:text-3xl flex items-center">
+        <span className="w-10 h-10 mr-2 flex items-center">
+          <img src={logo} alt="SVCE Logo" />
+        </span>
+        <span className="glow">
+          <span className="text-blue-500">SVCE</span>{" "}
+          <span className="text-white">Bengaluru</span>
+        </span>
       </div>
-
-      <button className="text-gray-600 focus:outline-none md:hidden" onClick={toggleNav}>
-        <svg className="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <button
+        className="text-gray-600 focus:outline-none md:hidden"
+        onClick={toggleNav}
+      >
+        <svg
+          className="h-6 w-6 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
           {isNavOpen ? (
             <path
               fillRule="evenodd"
@@ -48,7 +59,11 @@ const Navbar = () => {
           )}
         </svg>
       </button>
-      <ul className={`md:flex md:items-center md:space-x-8 w-full md:w-auto ${isNavOpen ? 'block' : 'hidden'}`}>
+      <ul
+        className={`md:flex md:items-center md:space-x-8 w-full md:w-auto ${
+          isNavOpen ? "block" : "hidden"
+        }`}
+      >
         <li>
           <a
             href="#"
@@ -95,4 +110,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
