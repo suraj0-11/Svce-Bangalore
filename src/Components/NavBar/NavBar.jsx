@@ -1,16 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "./svce-logo.png";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isTranslucent, setIsTranslucent] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 0) {
+        setIsTranslucent(true);
+      } else {
+        setIsTranslucent(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 py-4 px-6 flex justify-between items-center transition-all duration-300 bg-gray-900 bg-opacity-55 backdrop-filter backdrop-blur-sm shadow-md z-10`}
+      className={`fixed top-0 left-0 right-0 py-4 px-6 flex justify-between items-center transition-all duration-300 ${
+        isTranslucent
+          ? "bg-gray-900 bg-opacity-80 backdrop-filter backdrop-blur-sm shadow-md"
+          : "bg-transparent"
+      } z-10`}
     >
       <div className="font-bold text-xl lg:text-3xl flex items-center">
         <span className="w-10 h-10 mr-2 flex items-center">
