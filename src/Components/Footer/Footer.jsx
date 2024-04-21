@@ -59,28 +59,44 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="src/Components/Footer/facebook.png" alt="Facebook" />
+              <img
+                src="src/Components/Footer/facebook.png"
+                alt="Facebook"
+                className="w-8 h-8"
+              />
             </a>
             <a
               href="https://www.instagram.com/svce_bengaluru/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="src/Components/Footer/Insta.png" alt="Instagram" />
+              <img
+                src="src/Components/Footer/Insta.png"
+                alt="Instagram"
+                className="w-8 h-8"
+              />
             </a>
             <a
               href="https://x.com/SvceBengaluru?t=_W2I9zhdHZgV8mgTBev73A&s=09"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="src/Components/Footer/twitter.png" alt="Twitter" />
+              <img
+                src="src/Components/Footer/twitter.png"
+                alt="Twitter"
+                className="w-8 h-8"
+              />
             </a>
             <a
               href="https://www.youtube.com/@svcebangalore2290"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="src/Components/Footer/youtube.png" alt="Youtube" />
+              <img
+                src="src/Components/Footer/youtube.png"
+                alt="Youtube"
+                className="w-8 h-8"
+              />
             </a>
           </div>
         </div>
