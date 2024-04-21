@@ -27,7 +27,7 @@ const Main = () => {
   return (
     <div className="relative">
       <div className="parallax-wrapper">
-        <div className="background background--spring">
+        <div className="background">
           <video
             src={video}
             autoPlay
