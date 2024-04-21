@@ -1,19 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import logo from "./svce-logo.png";
 
 const Navbar = () => {
-  const [isSticky, setIsSticky] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setIsSticky(scrollPosition > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -21,11 +10,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 py-4 px-6 flex justify-between items-center transition-all duration-300 ${
-        isSticky
-          ? "bg-gray-900 bg-opacity-55 backdrop-filter backdrop-blur-sm shadow-md"
-          : "bg-transparent"
-      } z-10`}
+      className={`fixed top-0 left-0 right-0 py-4 px-6 flex justify-between items-center transition-all duration-300 bg-gray-900 bg-opacity-55 backdrop-filter backdrop-blur-sm shadow-md z-10`}
     >
       <div className="font-bold text-xl lg:text-3xl flex items-center">
         <span className="w-10 h-10 mr-2 flex items-center">
@@ -43,7 +28,7 @@ const Navbar = () => {
         <svg
           className="h-6 w-6 fill-current"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
+          viewBox="0 0 0 0"
         >
           {isNavOpen ? (
             <path
