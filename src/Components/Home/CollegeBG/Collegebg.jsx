@@ -32,7 +32,7 @@ function Collegebg() {
     <>
       <section id="top">
         <img
-          src="https://i.ytimg.com/vi/tLlLL_uyA44/maxresdefault.jpg"
+          src="src\Components\Home\CollegeBG\colbg.jpg"
           id="bg"
           alt="Background"
         />
@@ -58,10 +58,10 @@ function Collegebg() {
           alt=""
         />
         <img
-          src="src\Components\Home\CollegeBG\transparent.png"
+          src="src\Components\Home\CollegeBG\girlbg.png"
           id="mountain_left"
           ref={mountainLeftRef}
-          alt="Mountain "
+          alt=""
         />
         <img
           src="src\Components\Home\CollegeBG\transparent.png"

@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Gulzar&display=swap");
+
+body {
+  background-color: rgba(218, 202, 182, 0.1);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  max-width: 1520px;
+  margin: 0 auto;
+  padding-block: 1em;
+  font-family: "Gulzar", serif;
+}
+
+.title {
+  grid-column: 2 / 3;
+  margin: 1rem 2rem 2rem 2rem;
+  font-size: 3em;
+  line-height: 1.2;
+}
+
+#image-to-scale {
+  width: 400px;
+  height: 250px;
+  position: sticky;
+  top: 1rem;
+  left: 0;
+  will-change: transform;
+  transform-origin: top left;
+  transition: transform 300ms linear, filter 300ms linear;
+  margin-inline-end: 2rem;
+}
