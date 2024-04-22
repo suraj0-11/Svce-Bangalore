@@ -35,7 +35,7 @@ const Main = () => {
             muted
             className="w-full h-full object-cover fixed z-0"
           />
-          <div className="absolute top-0 left-0 md:left-10 w-full h-full flex flex-col justify-center text-white z-10">
+          <div className="absolute top-0 left-0 md:left-20 w-full h-full flex flex-col justify-center text-white z-10">
             <p className="text-6xl font-bold">
               WE <br /> DON'T JUST <br /> DREAM IT, <br /> WE ENGINEER IT.
             </p>

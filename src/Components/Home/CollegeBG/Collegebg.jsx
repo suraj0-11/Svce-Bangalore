@@ -32,42 +32,42 @@ function Collegebg() {
     <>
       <section id="top">
         <img
-          src="https://aryan-tayal.github.io/Mountains-Parallax/bg.jpg"
+          src="https://i.ytimg.com/vi/tLlLL_uyA44/maxresdefault.jpg"
           id="bg"
           alt="Background"
         />
         <h2 id="text" ref={textRef}>
-          Mountains
+          SVCE
         </h2>
         <img
-          src="https://aryan-tayal.github.io/Mountains-Parallax/man.png"
+          src="src\Components\Home\CollegeBG\transparent.png"
           id="man"
           ref={manRef}
-          alt="Man"
+          alt=""
         />
         <img
-          src="https://aryan-tayal.github.io/Mountains-Parallax/clouds_1.png"
+          src="src\Components\Home\CollegeBG\transparent.png"
           id="clouds_1"
           ref={cloud1Ref}
-          alt="Clouds 1"
+          alt=""
         />
         <img
-          src="https://aryan-tayal.github.io/Mountains-Parallax/clouds_2.png"
+          src="src\Components\Home\CollegeBG\transparent.png"
           id="clouds_2"
           ref={cloud2Ref}
-          alt="Clouds 2"
+          alt=""
         />
         <img
-          src="https://aryan-tayal.github.io/Mountains-Parallax/mountain_left.png"
+          src="src\Components\Home\CollegeBG\transparent.png"
           id="mountain_left"
           ref={mountainLeftRef}
-          alt="Mountain Left"
+          alt="Mountain "
         />
         <img
-          src="https://aryan-tayal.github.io/Mountains-Parallax/mountain_right.png"
-          id="mountain_right"
+          src="src\Components\Home\CollegeBG\transparent.png"
+          id=""
           ref={mountainRightRef}
-          alt="Mountain Right"
+          alt=""
         />
       </section>
     </>
