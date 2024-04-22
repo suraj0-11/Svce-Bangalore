@@ -3,6 +3,7 @@ import Navbar from "../NavBar/NavBar";
 import video from "../Home/video.mp4";
 import Collegebg from "./CollegeBG/Collegebg";
 import Cards from "./Cards/Cards";
+import Courses from "./Courses/Courses";
 import "./styles.css";
 
 const Main = () => {
@@ -53,6 +54,9 @@ const Main = () => {
       <Navbar />
       <div>
         <Cards />
+      </div>
+      <div>
+        <Courses />
       </div>
     </div>
   );
