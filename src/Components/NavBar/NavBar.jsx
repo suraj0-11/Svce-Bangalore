@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import logo from "./svce-logo.png";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isTranslucent, setIsTranslucent] = useState(false);
+  const navbarRef = useRef(null);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -12,7 +13,9 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      if (scrollPosition > 0) {
+      const navbarHeight = navbarRef.current.offsetHeight;
+
+      if (scrollPosition >= navbarHeight) {
         setIsTranslucent(true);
       } else {
         setIsTranslucent(false);
@@ -27,6 +30,7 @@ const Navbar = () => {
 
   return (
     <nav
+      ref={navbarRef}
       className={`fixed top-0 left-0 right-0 py-4 px-6 flex justify-between items-center transition-all duration-300 ${
         isTranslucent
           ? "bg-gray-900 bg-opacity-80 backdrop-filter backdrop-blur-sm shadow-md"

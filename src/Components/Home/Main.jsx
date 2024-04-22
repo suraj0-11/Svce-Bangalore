@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../NavBar/NavBar";
 import video from "../Home/video.mp4";
 import Collegebg from "./CollegeBG/Collegebg";
+import Cards from "./Cards/Cards";
 import "./styles.css";
 
 const Main = () => {
@@ -50,6 +51,9 @@ const Main = () => {
         </div>
       </div>
       <Navbar />
+      <div>
+        <Cards />
+      </div>
     </div>
   );
 };
