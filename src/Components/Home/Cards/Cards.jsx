@@ -5,7 +5,7 @@ const Cards = () => {
   return (
     <div>
       <article className="wrapper">
-        <h1 className="title text-center font-bold">WELCOME TO SVCE</h1>
+        <h1 className="title text-left font-bold">WELCOME TO SVCE</h1>
         <img
           id="image-to-scale"
           src="https://art.pixilart.com/9c7c9b241567221.png"
@@ -15,7 +15,7 @@ const Cards = () => {
         />
         <main>
           <p
-            className="text-3xl leading-8 text-justify px-4 text-gray-250 font-bold font-bold text-center"
+            className="text-3xl leading-8 text-justify px-4 text-gray-250 font-bold font-bold text-center "
             id="observed-target"
           >
             For over decade SVCE has provided peerless academic, administrative
@@ -24,7 +24,7 @@ const Cards = () => {
             we understand the importance of every part of the student journey.
           </p>
         </main>
-        <h1 className="title text-center font-bold">VISION</h1>
+        <h1 className="title text-left font-bold">VISION</h1>
         <img
           id="image-to-scale"
           src="https://art.pixilart.com/9c7c9b241567221.png"
@@ -41,7 +41,7 @@ const Cards = () => {
             perspective.
           </p>
         </main>
-        <h1 className="title text-center font-bold">MISSION</h1>
+        <h1 className="title text-left font-bold">MISSION</h1>
         <img
           id="image-to-scale"
           src="https://art.pixilart.com/9c7c9b241567221.png"

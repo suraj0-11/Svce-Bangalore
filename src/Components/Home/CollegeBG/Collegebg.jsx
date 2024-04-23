@@ -32,13 +32,11 @@ function Collegebg() {
     <>
       <section id="top">
         <img
-          src="src\Components\Home\CollegeBG\colbg.jpg"
+          src="https://svcengg.edu.in/wp-content/uploads/2022/11/vlcsnap-2020-08-10-00h20m48s262.jpg"
           id="bg"
           alt="Background"
         />
-        <h2 id="text" ref={textRef}>
-          SVCE
-        </h2>
+        <h2 id="text" ref={textRef}></h2>
         <img
           src="src\Components\Home\CollegeBG\transparent.png"
           id="man"
