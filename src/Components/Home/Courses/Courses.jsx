@@ -1,27 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./Courses.css";
 
 const Courses = () => {
-  const imgContainer = React.createRef();
+  const imgContainerRef = useRef(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const last = imgContainer.current.firstElementChild;
+    const intervalId = setInterval(() => {
+      const imgContainer = imgContainerRef.current;
+      const last = imgContainer.firstElementChild;
       last.remove();
-      imgContainer.current.appendChild(last);
+      imgContainer.appendChild(last);
     }, 2500);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
     <section>
       <div className="card">
-        <h2>OUR PROGRAMS</h2>
-        <p>Discover our programs to assuage your choice</p>
+        <h2>3D image slider</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae minus
+          tempore velit quisquam, cupiditate fugit reprehenderit.
+        </p>
         <div className="shadow"></div>
       </div>
-      <div id="img-container" ref={imgContainer}>
+      <div id="img-container" ref={imgContainerRef}>
         <div className="box">
           <img
             src="https://i1.sndcdn.com/artworks-000137479333-rpqogd-t500x500.jpg"

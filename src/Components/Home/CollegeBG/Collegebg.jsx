@@ -59,7 +59,7 @@ function Collegebg() {
         />
         <img
           className="object-scale-down"
-          src="src\Components\Home\CollegeBG\girlleftside.png"
+          src="src\Components\Home\CollegeBG\transparent.png"
           id="mountain_left"
           ref={mountainLeftRef}
           alt=""

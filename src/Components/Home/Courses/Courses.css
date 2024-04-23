@@ -1,14 +1,17 @@
 * {
   box-sizing: border-box;
 }
+
 html {
   --body-bg: hsl(210, 20%, 20%);
 }
+
 body {
   margin: 0;
   height: 100vh;
   font-family: system-ui, -apple-system, sans-serif;
 }
+
 section {
   position: relative;
   z-index: -1;
@@ -21,6 +24,7 @@ section {
   background: radial-gradient(var(--body-bg), #000);
   overflow-x: hidden;
 }
+
 #img-container {
   margin-left: 8em;
   height: 280px;
@@ -28,6 +32,7 @@ section {
   perspective: 500px;
   transform-style: preserve-3d;
 }
+
 .box {
   height: 280px;
   width: 280px;
@@ -39,28 +44,33 @@ section {
   transition: 800ms ease-in-out;
   overflow: hidden;
 }
+
 .box img {
   width: 100%;
   height: 100%;
 }
+
 .box:first-of-type {
   left: 15%;
   opacity: 0;
   z-index: 5;
   transform: translate(-50%, -50%) rotateY(-10deg);
 }
+
 .box:nth-of-type(2) {
   left: 20%;
   opacity: 1;
   z-index: 5;
   transform: translate(-50%, -50%) rotateY(-10deg);
 }
+
 .box:nth-of-type(3) {
   left: 25%;
   opacity: 0.75;
   z-index: 10;
   transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-40px);
 }
+
 .box:nth-of-type(4) {
   left: 30%;
   opacity: 0.5;
@@ -78,6 +88,7 @@ section {
   color: #dce3f9;
   border-radius: var(--br);
 }
+
 .card::after {
   content: "";
   position: absolute;
@@ -95,14 +106,17 @@ section {
     hsl(210, 95%, 8%);
   background-blend-mode: screen;
 }
-@media (width>768px) {
+
+@media (width > 768px) {
   section {
     flex-direction: row;
   }
+
   .card::after {
     inset: -1px;
   }
 }
+
 .shadow {
   content: "";
   position: absolute;

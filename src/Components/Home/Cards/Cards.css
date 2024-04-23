@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gulzar&display=swap");
 
 body {
-  background-color: rgba(218, 202, 182, 0.1);
+  background-color: smokewhite;
 }
 
 .wrapper {
@@ -21,8 +21,8 @@ body {
 }
 
 #image-to-scale {
-  width: 400px;
-  height: 250px;
+  width: 400px; /* Increased width */
+  height: 400px; /* Increased height to maintain aspect ratio */
   position: sticky;
   top: 1rem;
   left: 0;
@@ -30,4 +30,10 @@ body {
   transform-origin: top left;
   transition: transform 300ms linear, filter 300ms linear;
   margin-inline-end: 2rem;
+}
+
+#observed-target1 {
+  padding-left: 12.75rem;
+  display: flex;
+  bottom: 50px;
 }
