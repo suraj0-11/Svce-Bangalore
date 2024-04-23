@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import logo from "./svce-logo.png";
+import toggleIconOpen from "./more.png";
+import toggleIconClose from "./close.png";
+import "./navbar.css";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -14,14 +17,12 @@ const Navbar = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const navbarHeight = navbarRef.current.offsetHeight;
-
       if (scrollPosition >= navbarHeight) {
         setIsTranslucent(true);
       } else {
         setIsTranslucent(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -37,41 +38,20 @@ const Navbar = () => {
           : "bg-transparent"
       } z-10`}
     >
-      <div className="font-bold text-xl lg:text-3xl flex items-center">
-        <span className="w-10 h-10 mr-2 flex items-center">
-          <img src={logo} alt="SVCE Logo" />
-        </span>
-        <span className="glow">
-          <span className="text-blue-500">SVCE</span>{" "}
-          <span className="text-white">Bengaluru</span>
-        </span>
+      <div className="flex items-center">
+        <div className="font-bold text-xl lg:text-3xl flex items-center">
+          <span className="w-10 h-10 mr-2 flex items-center">
+            <img src={logo} alt="SVCE Logo" />
+          </span>
+          <span className="glow">
+            <span className="text-blue-500">SVCE</span>{" "}
+            <span className="text-white">Bengaluru</span>
+          </span>
+        </div>
       </div>
-      <button
-        className="text-gray-600 focus:outline-none md:hidden"
-        onClick={toggleNav}
-      >
-        <svg
-          className="h-6 w-6 fill-current"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 0 0"
-        >
-          {isNavOpen ? (
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-            />
-          ) : (
-            <path
-              fillRule="evenodd"
-              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-            />
-          )}
-        </svg>
-      </button>
       <ul
         className={`md:flex md:items-center md:space-x-8 w-full md:w-auto ${
-          isNavOpen ? "block" : "hidden"
+          isNavOpen ? "block" : "hidden md:block"
         }`}
       >
         <li>
@@ -82,7 +62,9 @@ const Navbar = () => {
             Who We Are
           </a>
         </li>
+        {/* ... other navigation links ... */}
         <li>
+          {" "}
           <a
             href="#"
             className="text-gray-100 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-full transition-colors duration-300 text-lg"
@@ -115,6 +97,16 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+      <button
+        className="md:hidden text-gray-600 focus:outline-none"
+        onClick={toggleNav}
+      >
+        <img
+          src={isNavOpen ? toggleIconClose : toggleIconOpen}
+          alt="Toggle Menu"
+          className="h-6 w-6 bg-color-white"
+        />
+      </button>
     </nav>
   );
 };

@@ -1,0 +1,5 @@
+/* Add this to your CSS file */
+.flex.items-center {
+  display: flex;
+  align-items: center;
+}
