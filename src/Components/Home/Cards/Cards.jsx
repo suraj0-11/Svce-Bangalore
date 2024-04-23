@@ -4,95 +4,72 @@ import "./Cards.css";
 const Cards = () => {
   return (
     <div>
-      <article class="wrapper">
-        <h1 class="title">Bacon ipsum</h1>
+      <article className="wrapper">
+        <h1 className="title text-center font-bold">WELCOME TO SVCE</h1>
         <img
           id="image-to-scale"
-          src="https://picsum.photos/id/200/200"
+          src="https://art.pixilart.com/9c7c9b241567221.png"
           alt=""
-          width="200"
-          height="200"
+          width="800px"
+          height="800px"
         />
-
         <main>
           <p
-            className="text-xl leading-8 text-justify px-4 bg-blue-400 text-gray-100"
+            className="text-3xl leading-8 text-justify px-4 text-gray-250 font-bold font-bold text-center"
             id="observed-target"
           >
-            Spicy jalapeno bacon ipsum dolor amet ham pork chop frankfurter enim
-            proident. Shank andouille pork belly dolore beef ribs. Mollit magna
-            shankle bacon tongue non short ribs doner proident pastrami meatloaf
-            chuck consectetur boudin. Reprehenderit kevin ut tail, kielbasa
-            aliquip filet mignon magna nulla eiusmod ribeye non sed. Cillum
-            lorem meatball tongue, pork dolore pork chop. Fugiat ut biltong
-            tempor sint, chislic pork loin nulla ipsum sed andouille kielbasa.
-            Dolor sed laboris fatback jerky ground round cupidatat magna. Bacon
-            laborum nulla, ham kielbasa ut beef ribs t-bone deserunt et
-            turducken sint ad irure burgdoggen. Lorem shankle buffalo porchetta
-            kevin nisi brisket. Chislic exercitation cupidatat do tenderloin,
-            salami reprehenderit. Enim shoulder tongue labore frankfurter boudin
-            consectetur shankle deserunt adipisicing sausage rump alcatra. Pork
-            loin tempor sirloin fugiat.
+            For over decade SVCE has provided peerless academic, administrative
+            and pastoral support to students hoping to succeed and beyond. From
+            academic aspirations to the simple day-to-day challenges of living,
+            we understand the importance of every part of the student journey.
           </p>
         </main>
-        <h1 class="title">Vision</h1>
+        <h1 className="title text-center font-bold">VISION</h1>
         <img
           id="image-to-scale"
-          src="https://picsum.photos/id/200/200"
+          src="https://art.pixilart.com/9c7c9b241567221.png"
           alt=""
-          width="400"
-          height="400"
+          width="800px"
+          height="800px"
         />
-
         <main>
           <p
-            className="text-xl leading-8 text-justify px-4 bg-blue-400 text-gray-100"
-            id="observed-target"
+            className="text-3xl leading-8 text-justify px-4 pl-13 text-gray-250 font-bold font-bold text-center"
+            id="observed-target1"
           >
-            Spicy jalapeno bacon ipsum dolor amet ham pork chop frankfurter enim
-            proident. Shank andouille pork belly dolore beef ribs. Mollit magna
-            shankle bacon tongue non short ribs doner proident pastrami meatloaf
-            chuck consectetur boudin. Reprehenderit kevin ut tail, kielbasa
-            aliquip filet mignon magna nulla eiusmod ribeye non sed. Cillum
-            lorem meatball tongue, pork dolore pork chop. Fugiat ut biltong
-            tempor sint, chislic pork loin nulla ipsum sed andouille kielbasa.
-            Dolor sed laboris fatback jerky ground round cupidatat magna. Bacon
-            laborum nulla, ham kielbasa ut beef ribs t-bone deserunt et
-            turducken sint ad irure burgdoggen. Lorem shankle buffalo porchetta
-            kevin nisi brisket. Chislic exercitation cupidatat do tenderloin,
-            salami reprehenderit. Enim shoulder tongue labore frankfurter boudin
-            consectetur shankle deserunt adipisicing sausage rump alcatra. Pork
-            loin tempor sirloin fugiat.
+            To be a premier institute for addressing the challenges in global
+            perspective.
           </p>
         </main>
-        <h1 class="title">Mission</h1>
+        <h1 className="title text-center font-bold">MISSION</h1>
         <img
           id="image-to-scale"
-          src="https://picsum.photos/id/200/200"
+          src="https://art.pixilart.com/9c7c9b241567221.png"
           alt=""
-          width="200"
-          height="200"
+          width="800px"
+          height="800px"
         />
-
         <main>
           <p
-            className="text-xl leading-8 text-justify px-4 bg-blue-400 text-gray-100"
+            className="text-3xl leading-12 text-justify px-4 text-gray-250 font-bold font-bold text-center"
             id="observed-target"
           >
-            Spicy jalapeno bacon ipsum dolor amet ham pork chop frankfurter enim
-            proident. Shank andouille pork belly dolore beef ribs. Mollit magna
-            shankle bacon tongue non short ribs doner proident pastrami meatloaf
-            chuck consectetur boudin. Reprehenderit kevin ut tail, kielbasa
-            aliquip filet mignon magna nulla eiusmod ribeye non sed. Cillum
-            lorem meatball tongue, pork dolore pork chop. Fugiat ut biltong
-            tempor sint, chislic pork loin nulla ipsum sed andouille kielbasa.
-            Dolor sed laboris fatback jerky ground round cupidatat magna. Bacon
-            laborum nulla, ham kielbasa ut beef ribs t-bone deserunt et
-            turducken sint ad irure burgdoggen. Lorem shankle buffalo porchetta
-            kevin nisi brisket. Chislic exercitation cupidatat do tenderloin,
-            salami reprehenderit. Enim shoulder tongue labore frankfurter boudin
-            consectetur shankle deserunt adipisicing sausage rump alcatra. Pork
-            loin tempor sirloin fugiat.
+            <ul>
+              <li>
+                M1: Nurture students with professional and ethical outlook to
+                identify needs, analyze, design and innovate sustainable
+                solutions through lifelong learning in service of society as
+                individual or a team.
+              </li>
+              <li>
+                M2: Establish state-of-the-art Laboratories and Information
+                Resource centre for education and research.
+              </li>
+              <li>
+                M3: Collaborate with Industry, Government Organization and
+                Society to align the curriculum and outreach activities.
+              </li>
+            </ul>
           </p>
         </main>
       </article>
