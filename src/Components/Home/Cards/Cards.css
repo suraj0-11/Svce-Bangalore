@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Gulzar&display=swap");
 
 body {
-  background-color: smokewhite;
+  background-color: rgba(218, 202, 182, 0.1);
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  max-width: 1520px;
+  /* grid-template-columns: 1fr 5fr; */
+  /* max-width: 1000px; */
   margin: 0 auto;
   padding-block: 1em;
   font-family: "Gulzar", serif;
@@ -17,12 +17,20 @@ body {
   grid-column: 2 / 3;
   margin: 1rem 2rem 2rem 2rem;
   font-size: 3em;
-  line-height: 1.2;
+  /* line-height: 1.2; */
+}
+
+/* p:nth-child(odd) {
+  background-color: rgba(218, 202, 182, 0.12);
+} */
+
+p:nth-child(1) {
+  margin-top: 0;
 }
 
 #image-to-scale {
-  width: 400px; /* Increased width */
-  height: 400px; /* Increased height to maintain aspect ratio */
+  width: 600px;
+  height: 600px;
   position: sticky;
   top: 1rem;
   left: 0;
@@ -30,10 +38,4 @@ body {
   transform-origin: top left;
   transition: transform 300ms linear, filter 300ms linear;
   margin-inline-end: 2rem;
-}
-
-#observed-target1 {
-  padding-left: 12.75rem;
-  display: flex;
-  bottom: 50px;
 }
